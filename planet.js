@@ -15,7 +15,7 @@ class Planet{
 		}
 		this.center_of_mass = [top[0]/bottom, top[1]/bottom]
 		do{
-		    var selection = parseInt(prompt("Please enter orbit radius in meters (note: the radius of your star is " + (1e4*Math.floor(relative_star_radius*sun_radius / 1e4)/1e6).toString() + " * 10^6 m)" , ""), 10);
+		    var selection = parseInt(prompt("Please enter orbit radius in meters (try 5000000000000m (12 zeroes) to start!)" , ""), 10);
 		}while(isNaN(selection));
 		this.radius = selection
 		this.star_mass =  (sun_density * Math.pow(sun_radius,3) * Math.pow(relative_star_radius,3) * 4/3 * Math.PI)
